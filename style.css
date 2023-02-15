@@ -1,0 +1,102 @@
+/*style the whole page*/
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*make the header look pretty*/
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+    text-align: center;
+}
+
+/*Bring the header down to be centred*/
+header h1{
+    margin: 40px;
+}
+
+/*Resize the image*/
+header img{
+    height: 125px;
+}
+
+
+/*set the max size of the product grid*/
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/*make sure the images are uniform size, don't stretch when the window resizes and make sure that smaller images don't move the button or product name up or down. If the alt-text is shown instead of the image, maintain the height*/
+.card img{
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100px;
+}
+
+/*Set the font size for the product name and make sure it's all the same height*/
+.card-title{
+    font-size: 90%;
+    height: 20px;
+}
+
+/*Set the height of the card so it is a clear grid*/
+.card{
+    height: 90%;
+}
+
+/*Make the price not too close to the name of the product*/
+.price{
+    padding-top: 50px;
+}
+
+/*Add a pretty box shadow to the card and increase the size when the user puts the mouse over the card*/
+.card:hover{
+    box-shadow: 0px 0px 20px 10px rgba(230,214,230,0.63);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/*make the footer have a different (but similar to the top) colour and align the text to be centred*/
+footer {
+	background-color: #ccc;
+	padding: 20px;
+	text-align: center;
+}
+
+/*Add an option for a company image and resize it*/
+footer img {
+	max-width: auto;
+	height: 75px;
+	margin-right: 40px;
+}
+
+/*Make the elements of the form in a line*/
+form {
+	display: inline-block;
+}
+
+/*Make the labels for the form in a line too*/
+label {
+	display: block;
+}
+
+/*Style the submit button*/
+button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 5px 20px;
+	cursor: pointer;
+    margin-left: 10px;
+}
+
+/*Make the button colour change if the user hovers over the button*/
+button[type="submit"]:hover {
+	background-color: #666;
+}
